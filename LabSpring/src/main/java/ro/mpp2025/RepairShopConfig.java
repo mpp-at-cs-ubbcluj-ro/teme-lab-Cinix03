@@ -20,7 +20,7 @@ public class RepairShopConfig {
         Properties props = new Properties();
         try{
             System.out.println("Searching bd.config in directory " + ((new File (".")).getAbsolutePath()));
-            props.load(new FileReader ("src\\main\\resources\\bd.config"));
+            props.load(new FileReader ("bd.config"));
         } catch (IOException e) {
             System.err.println("Error reading bd.config" + e.getMessage());
         }

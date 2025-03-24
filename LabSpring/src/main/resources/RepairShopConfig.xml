@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <util:properties id="jdbcProps1">
-        <prop key="tasks.jdbc.url">jdbc.url=jdbc:sqlite:jdbc:sqlite:C:/Users/vasil/IdeaProjects/teme-lab-Cinix03/LabSpring/src/RepairShopDB.db</prop>
+        <prop key="tasks.jdbc.url">jdbc.url=jdbc:sqlite:jdbc:sqlite:C:/Users/vasil/IdeaProjects/teme-lab-Cinix03/LabSpring/RepairShopDB.db</prop>
     </util:properties>
 
     <util:properties id="jdbcProps" location="classpath:bd.config"/>

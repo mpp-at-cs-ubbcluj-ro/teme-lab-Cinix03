@@ -39,7 +39,7 @@ javafx {
 }
 
 application {
-    mainClass='ro.mpp2025.MainFX'
+    mainClass='ro.mpp2025.MainFXSpring'
 }
 
 test {
