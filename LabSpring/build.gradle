@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+group = 'ro.mpp2025'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.3'
+// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+    implementation 'org.apache.logging.log4j:log4j-api:2.24.3'
+
+    // https://mvnrepository.com/artifact/org.openjfx/javafx-base
+    implementation 'org.openjfx:javafx-base:23.0.2'
+    // https://mvnrepository.com/artifact/org.openjfx/javafx-controls
+    implementation 'org.openjfx:javafx-controls:23.0.2'
+    // https://mvnrepository.com/artifact/org.openjfx/javafx-fxml
+    implementation 'org.openjfx:javafx-fxml:23'
+    // https://mvnrepository.com/artifact/org.springframework/spring
+    implementation 'org.springframework:spring-context:5.3.30'  // Asigură-te că e o versiune recentă
+
+    implementation 'org.xerial:sqlite-jdbc:3.49.1.0'
+
+}
+
+javafx {
+    version = "21" // Versiunea JavaFX
+    modules = ['javafx.controls', 'javafx.fxml'] // Modulele necesare
+}
+
+application {
+    mainClass='ro.mpp2025.MainFXSpring'
+}
+
+test {
+    useJUnitPlatform()
+}
